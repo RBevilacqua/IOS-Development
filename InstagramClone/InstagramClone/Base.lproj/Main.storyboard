@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InstagramClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="59C-1u-hhh">
+                                <rect key="frame" x="38" y="172" width="244" height="259"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9p-6D-xEf">
+                                <rect key="frame" x="16" y="28" width="76" height="30"/>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N55-yb-bLt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-xJ-ypR">
+                                <rect key="frame" x="16" y="66" width="75" height="30"/>
+                                <state key="normal" title="Pause App">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afA-9u-FtI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alB-EZ-MYx">
+                                <rect key="frame" x="222" y="28" width="82" height="30"/>
+                                <state key="normal" title="Create Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8uP-Jf-Bhr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOm-C2-ej7">
+                                <rect key="frame" x="218" y="66" width="86" height="30"/>
+                                <state key="normal" title="Restore App">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonRestore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JbF-9s-Urc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z9p-6D-xEf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="30V-bB-cPk"/>
+                            <constraint firstAttribute="trailing" secondItem="alB-EZ-MYx" secondAttribute="trailing" constant="16" id="UoI-Ix-S47"/>
+                            <constraint firstItem="0QS-xJ-ypR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="XNY-zH-uJi"/>
+                            <constraint firstItem="0QS-xJ-ypR" firstAttribute="top" secondItem="z9p-6D-xEf" secondAttribute="bottom" constant="8" id="Xmt-Cf-m6q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="59C-1u-hhh" secondAttribute="bottom" constant="49" id="a7g-8f-bvX"/>
+                            <constraint firstItem="59C-1u-hhh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="38" id="bRr-Li-tZH"/>
+                            <constraint firstItem="MOm-C2-ej7" firstAttribute="top" secondItem="alB-EZ-MYx" secondAttribute="bottom" constant="8" id="gb5-U7-Dd2"/>
+                            <constraint firstAttribute="trailing" secondItem="59C-1u-hhh" secondAttribute="trailing" constant="38" id="hxd-kf-O1V"/>
+                            <constraint firstItem="z9p-6D-xEf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="k35-tb-gQd"/>
+                            <constraint firstAttribute="trailing" secondItem="MOm-C2-ej7" secondAttribute="trailing" constant="16" id="mEi-tz-LXN"/>
+                            <constraint firstItem="alB-EZ-MYx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="yG4-88-MjF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="pickedImage" destination="59C-1u-hhh" id="ubc-yT-fpa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="401"/>
+        </scene>
+    </scenes>
+</document>
