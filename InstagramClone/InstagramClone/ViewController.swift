@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate{
 
-
+    /*
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
 
     @IBOutlet var pickedImage: UIImageView!
@@ -70,6 +70,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.presentViewController(alert, animated: true, completion: nil)
 
     }
+
+    */
+
+
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,7 +129,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         */
 
-
+        
 
     }
 
