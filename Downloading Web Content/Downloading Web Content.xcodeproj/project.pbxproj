@@ -13,6 +13,7 @@
 		E93420D11A9CC4FF002818D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E93420D01A9CC4FF002818D2 /* Images.xcassets */; };
 		E93420D41A9CC4FF002818D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E93420D21A9CC4FF002818D2 /* LaunchScreen.xib */; };
 		E93420E01A9CC4FF002818D2 /* Downloading_Web_ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93420DF1A9CC4FF002818D2 /* Downloading_Web_ContentTests.swift */; };
+		E9468BD91AA515EF006BD227 /* pplist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9468BD81AA515EF006BD227 /* pplist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E93420D91A9CC4FF002818D2 /* Downloading Web ContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Downloading Web ContentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E93420DE1A9CC4FF002818D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E93420DF1A9CC4FF002818D2 /* Downloading_Web_ContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloading_Web_ContentTests.swift; sourceTree = "<group>"; };
+		E9468BD81AA515EF006BD227 /* pplist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pplist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				E93420C91A9CC4FF002818D2 /* AppDelegate.swift */,
 				E93420CB1A9CC4FF002818D2 /* ViewController.swift */,
+				E9468BD81AA515EF006BD227 /* pplist.plist */,
 				E93420CD1A9CC4FF002818D2 /* Main.storyboard */,
 				E93420D01A9CC4FF002818D2 /* Images.xcassets */,
 				E93420D21A9CC4FF002818D2 /* LaunchScreen.xib */,
@@ -194,6 +197,7 @@
 			files = (
 				E93420CF1A9CC4FF002818D2 /* Main.storyboard in Resources */,
 				E93420D41A9CC4FF002818D2 /* LaunchScreen.xib in Resources */,
+				E9468BD91AA515EF006BD227 /* pplist.plist in Resources */,
 				E93420D11A9CC4FF002818D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +411,7 @@
 				E93420E51A9CC4FF002818D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E93420E61A9CC4FF002818D2 /* Build configuration list for PBXNativeTarget "Downloading Web ContentTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +420,7 @@
 				E93420E81A9CC4FF002818D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

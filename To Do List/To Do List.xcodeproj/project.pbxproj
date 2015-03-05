@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E92B70C61A9BD03200212038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B70C51A9BD03200212038 /* AppDelegate.swift */; };
-		E92B70C81A9BD03200212038 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B70C71A9BD03200212038 /* FirstViewController.swift */; };
 		E92B70CA1A9BD03200212038 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B70C91A9BD03200212038 /* SecondViewController.swift */; };
 		E92B70CD1A9BD03200212038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92B70CB1A9BD03200212038 /* Main.storyboard */; };
 		E92B70CF1A9BD03200212038 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92B70CE1A9BD03200212038 /* Images.xcassets */; };
 		E92B70D21A9BD03200212038 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B70D01A9BD03200212038 /* LaunchScreen.xib */; };
 		E92B70DE1A9BD03200212038 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92B70DD1A9BD03200212038 /* To_Do_ListTests.swift */; };
+		E93516671AA60E68004AA3A0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93516661AA60E68004AA3A0 /* FirstViewController.swift */; };
+		E9468BDB1AA520E3006BD227 /* pplist.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9468BDA1AA520E3006BD227 /* pplist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +31,6 @@
 		E92B70C01A9BD03200212038 /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B70C41A9BD03200212038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92B70C51A9BD03200212038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E92B70C71A9BD03200212038 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		E92B70C91A9BD03200212038 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E92B70CC1A9BD03200212038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E92B70CE1A9BD03200212038 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -38,6 +38,8 @@
 		E92B70D71A9BD03200212038 /* To Do ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92B70DC1A9BD03200212038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92B70DD1A9BD03200212038 /* To_Do_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListTests.swift; sourceTree = "<group>"; };
+		E93516661AA60E68004AA3A0 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E9468BDA1AA520E3006BD227 /* pplist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pplist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				E92B70C51A9BD03200212038 /* AppDelegate.swift */,
-				E92B70C71A9BD03200212038 /* FirstViewController.swift */,
+				E93516661AA60E68004AA3A0 /* FirstViewController.swift */,
+				E9468BDA1AA520E3006BD227 /* pplist.plist */,
 				E92B70C91A9BD03200212038 /* SecondViewController.swift */,
 				E92B70CB1A9BD03200212038 /* Main.storyboard */,
 				E92B70CE1A9BD03200212038 /* Images.xcassets */,
@@ -197,6 +200,7 @@
 			files = (
 				E92B70CD1A9BD03200212038 /* Main.storyboard in Resources */,
 				E92B70D21A9BD03200212038 /* LaunchScreen.xib in Resources */,
+				E9468BDB1AA520E3006BD227 /* pplist.plist in Resources */,
 				E92B70CF1A9BD03200212038 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93516671AA60E68004AA3A0 /* FirstViewController.swift in Sources */,
 				E92B70CA1A9BD03200212038 /* SecondViewController.swift in Sources */,
 				E92B70C61A9BD03200212038 /* AppDelegate.swift in Sources */,
-				E92B70C81A9BD03200212038 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +415,7 @@
 				E92B70E31A9BD03200212038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E92B70E41A9BD03200212038 /* Build configuration list for PBXNativeTarget "To Do ListTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				E92B70E61A9BD03200212038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>sku</key>
+		<string>1000</string>
+		<key>name</key>
+		<string>David Guetta, Pop Life</string>
+		<key>price</key>
+		<string>23.48</string>
+		<key>stock</key>
+		<string>36</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1001</string>
+		<key>name</key>
+		<string>David Guetta, One Love</string>
+		<key>price</key>
+		<string>61.37</string>
+		<key>stock</key>
+		<string>39</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1002</string>
+		<key>name</key>
+		<string>David Guetta, F** I&apos;m Famous!</string>
+		<key>price</key>
+		<string>40.23</string>
+		<key>stock</key>
+		<string>6</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1003</string>
+		<key>name</key>
+		<string>David Guetta, Guetta Blaster</string>
+		<key>price</key>
+		<string>47.72</string>
+		<key>stock</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1004</string>
+		<key>name</key>
+		<string>Linkin Park, Minutes To Midnight</string>
+		<key>price</key>
+		<string>11.97</string>
+		<key>stock</key>
+		<string>27</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1005</string>
+		<key>name</key>
+		<string>Linkin Park, Hybrid Theory</string>
+		<key>price</key>
+		<string>21.62</string>
+		<key>stock</key>
+		<string>29</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1006</string>
+		<key>name</key>
+		<string>Linkin Park, Meteora</string>
+		<key>price</key>
+		<string>73.26</string>
+		<key>stock</key>
+		<string>29</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1007</string>
+		<key>name</key>
+		<string>Linkin Park, Reanimation</string>
+		<key>price</key>
+		<string>43.70</string>
+		<key>stock</key>
+		<string>16</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1008</string>
+		<key>name</key>
+		<string>Nirvana, Nevermind</string>
+		<key>price</key>
+		<string>42.22</string>
+		<key>stock</key>
+		<string>50</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1009</string>
+		<key>name</key>
+		<string>Nirvana, In Utero</string>
+		<key>price</key>
+		<string>69.41</string>
+		<key>stock</key>
+		<string>43</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1010</string>
+		<key>name</key>
+		<string>Nirvana, Best of the best</string>
+		<key>price</key>
+		<string>18.17</string>
+		<key>stock</key>
+		<string>9</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1011</string>
+		<key>name</key>
+		<string>Nirvana, The best of Nirvana</string>
+		<key>price</key>
+		<string>42.95</string>
+		<key>stock</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1012</string>
+		<key>name</key>
+		<string>Red Hot Chili Peppers, Californication</string>
+		<key>price</key>
+		<string>94.54</string>
+		<key>stock</key>
+		<string>45</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1013</string>
+		<key>name</key>
+		<string>Red Hot Chili Peppers, By the way</string>
+		<key>price</key>
+		<string>65.30</string>
+		<key>stock</key>
+		<string>12</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1014</string>
+		<key>name</key>
+		<string>Red Hot Chili Peppers, B-Sides</string>
+		<key>price</key>
+		<string>42.75</string>
+		<key>stock</key>
+		<string>43</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1015</string>
+		<key>name</key>
+		<string>Red Hot Chili Peppers, 10 Great Songs</string>
+		<key>price</key>
+		<string>33.29</string>
+		<key>stock</key>
+		<string>10</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1016</string>
+		<key>name</key>
+		<string>Gustavo Cerati, Fuerza Natural</string>
+		<key>price</key>
+		<string>76.07</string>
+		<key>stock</key>
+		<string>13</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1017</string>
+		<key>name</key>
+		<string>Gustavo Cerati, Siempre Es Hoy</string>
+		<key>price</key>
+		<string>14.01</string>
+		<key>stock</key>
+		<string>36</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1018</string>
+		<key>name</key>
+		<string>Gustavo Cerati, Dynamo</string>
+		<key>price</key>
+		<string>33.44</string>
+		<key>stock</key>
+		<string>30</string>
+	</dict>
+	<dict>
+		<key>sku</key>
+		<string>1019</string>
+		<key>name</key>
+		<string>Gustavo Cerati, Bocanada</string>
+		<key>price</key>
+		<string>61.26</string>
+		<key>stock</key>
+		<string>42</string>
+	</dict>
+</array>
+</plist>

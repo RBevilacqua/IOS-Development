@@ -10,17 +10,24 @@ import UIKit
 
 var toDoList:[String] = []
 
+var chapters: NSArray = NSArray()
+
 class FirstViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var ToDoListTable: UITableView!
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
+        var Chapterpath:NSString = NSBundle.mainBundle().pathForResource("pplist", ofType: "plist")!
+
+        chapters = NSArray(contentsOfFile: Chapterpath)!
+
+        /*if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
 
             toDoList = NSUserDefaults.standardUserDefaults().objectForKey("toDoList") as [String]
-        }
+        }*/
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,17 +36,17 @@ class FirstViewController: UIViewController, UITableViewDelegate {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return toDoList.count
+        return chapters.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
 
-        cell.textLabel?.text = toDoList[indexPath.row]
+        cell.textLabel?.text = chapters[indexPath.row]["Titulo"] as? String
+
 
         return cell
     }
-
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
 
         if editingStyle == UITableViewCellEditingStyle.Delete {
@@ -54,7 +61,7 @@ class FirstViewController: UIViewController, UITableViewDelegate {
 
 
     override func viewDidAppear(animated: Bool) {
-        ToDoListTable.reloadData()
+        //ToDoListTable.reloadData()
     }
 
 

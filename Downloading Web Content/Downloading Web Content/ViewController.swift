@@ -16,7 +16,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL(string: "http://192.168.0.102:1337/course")
+
+        var Chapterpath:NSString = NSBundle.mainBundle().pathForResource("pplist", ofType: "plist")!
+
+        var chapters = NSArray(contentsOfFile: Chapterpath)!
+
+        println(chapters[0]["Titulo"])
+
+        /*for chapter in chapters {
+            let chaptername = chapter["chapterName"]
+            let chapterNumber = chapter["pageNumber"]
+            println(chaptername);
+        }*/
+
+
+
+
+        /*let url = NSURL(string: "http://192.168.0.102:1337/course")
 
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {
             (data, response, error) in
@@ -31,6 +47,8 @@ class ViewController: UIViewController {
 
                 println(dersler[1]["title"])
 
+                println(dersler)
+
                 //var urlContent = NSString(data: data, encoding: NSUTF8StringEncoding)
 
                 //println(urlContent)
@@ -42,7 +60,7 @@ class ViewController: UIViewController {
 
 
         }
-        task.resume()
+        task.resume()*/
     }
 
     override func didReceiveMemoryWarning() {
