@@ -10,9 +10,17 @@ import UIKit
 
 var auxCartList = [Dictionary<String, AnyObject>]()
 
+protocol writeValueBackDelegate {
+    func writeValueBack(value: [Dictionary<String, AnyObject>])
+}
+
 class ViewCartController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var listTable: UITableView!
+
+    var buyCart = [Dictionary<String, AnyObject>]()
+    var delegate: writeValueBackDelegate?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,13 +58,29 @@ class ViewCartController: UIViewController, UITableViewDelegate, UITableViewData
 
             cartList[indexPath.row]["stock"] = stock
 
-            aux = listProducts[indexPath.row]["stock"] as String
+            aux = listProducts[(cartList[indexPath.row]["index"] as String).toInt()!]["stock"] as String
 
-            listProducts[indexPath.row].setObject(String(aux.toInt()! + 1), forKey: "stock")
+            let numListProduct = (cartList[indexPath.row]["index"] as String).toInt()!
+            
+
+            if listProducts[numListProduct]["sku"] as String == cartList[indexPath.row]["sku"] as String {
+
+                println(numListProduct)
+
+                listProducts[numListProduct].setObject(String(aux.toInt()! + 1), forKey: "stock")
+
+            }
 
             if stock.toInt()! == 0 {
 
-                listProducts.addObject(auxCartList[indexPath.row])
+                if listProducts[numListProduct]["sku"] as String != cartList[indexPath.row]["sku"] as String {
+
+                    listProducts.addObject(auxCartList[indexPath.row])
+
+                }
+
+                //listProducts.insertObject(auxCartList[indexPath.row], atIndex: 0)
+                delegate?.writeValueBack(buyCart)
 
                 cartList.removeAtIndex(indexPath.row)
 
@@ -65,6 +89,26 @@ class ViewCartController: UIViewController, UITableViewDelegate, UITableViewData
             listTable.reloadData()
         }
     }
+
+    /* Share and Delete */
+    /*
+    func tableView(tableView: UITableView!, editActionsForRowAtIndexPath indexPath: NSIndexPath!) -> [AnyObject]! {
+
+        var shareAction = UITableViewRowAction(style: UITableViewRowActionStyle.Normal, title: "Share", handler: {
+            (action: UITableViewRowAction!, indexPath: NSIndexPath!) in
+            println("Triggered share action \(action) atIndexPath: \(indexPath.row)")
+            return
+        })
+
+        var deleteAction = UITableViewRowAction(style: UITableViewRowActionStyle.Default, title: "Delete", handler: {
+            (action: UITableViewRowAction!, indexPath: NSIndexPath!) in
+            println("Triggered delete action \(action) atIndexPath: \(indexPath.row)")
+            return
+        })
+
+        return [deleteAction, shareAction]
+    }
+    */
 
     //UITableViewDelegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){

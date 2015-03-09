@@ -51,7 +51,7 @@
                                                     </state>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MB-1p-36G">
-                                                    <rect key="frame" x="8" y="10" width="304" height="24"/>
+                                                    <rect key="frame" x="8" y="11" width="304" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -86,14 +86,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="CMS-wE-JMZ">
+                        <barButtonItem key="leftBarButtonItem" title="$0.00" id="3uE-tR-faC"/>
                         <barButtonItem key="rightBarButtonItem" title="Cart(0)" id="A8f-u6-fsR">
                             <connections>
-                                <segue destination="cP4-QH-7L1" kind="show" id="jFt-5z-3mF"/>
+                                <segue destination="cP4-QH-7L1" kind="show" identifier="showCartList" id="jFt-5z-3mF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="amountTotal" destination="3uE-tR-faC" id="Zrm-Wr-xjp"/>
                         <outlet property="cartButton" destination="A8f-u6-fsR" id="Mfd-rr-hgE"/>
                         <outlet property="tableView" destination="llZ-cd-X9a" id="pRx-DX-2ww"/>
                     </connections>

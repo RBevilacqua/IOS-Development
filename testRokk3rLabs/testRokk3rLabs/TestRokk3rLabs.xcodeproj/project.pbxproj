@@ -14,6 +14,7 @@
 		E933AE511AA74AB60033BFF2 /* TestRokk3rLabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933AE501AA74AB60033BFF2 /* TestRokk3rLabsTests.swift */; };
 		E933AE601AA74C330033BFF2 /* dummyDataList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E933AE5F1AA74C330033BFF2 /* dummyDataList.plist */; };
 		E933AE631AA74CAE0033BFF2 /* taskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E933AE621AA74CAE0033BFF2 /* taskViewCell.swift */; };
+		E93898F51AAA5037008DA9EB /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93898F41AAA5037008DA9EB /* protocols.swift */; };
 		E9435D741AA7763B000C67DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9435D731AA7763B000C67DD /* Main.storyboard */; };
 		E9435D761AA778EB000C67DD /* ViewCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9435D751AA778EB000C67DD /* ViewCartController.swift */; };
 		E94DAA0D1AA89D8F00123CED /* cartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94DAA0C1AA89D8F00123CED /* cartViewCell.swift */; };
@@ -41,6 +42,7 @@
 		E933AE501AA74AB60033BFF2 /* TestRokk3rLabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRokk3rLabsTests.swift; sourceTree = "<group>"; };
 		E933AE5F1AA74C330033BFF2 /* dummyDataList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = dummyDataList.plist; sourceTree = "<group>"; };
 		E933AE621AA74CAE0033BFF2 /* taskViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = taskViewCell.swift; sourceTree = "<group>"; };
+		E93898F41AAA5037008DA9EB /* protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		E9435D731AA7763B000C67DD /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E9435D751AA778EB000C67DD /* ViewCartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewCartController.swift; sourceTree = "<group>"; };
 		E94DAA0C1AA89D8F00123CED /* cartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cartViewCell.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				E933AE3A1AA74AB60033BFF2 /* AppDelegate.swift */,
 				E933AE3C1AA74AB60033BFF2 /* ViewListController.swift */,
+				E93898F41AAA5037008DA9EB /* protocols.swift */,
 				E9435D751AA778EB000C67DD /* ViewCartController.swift */,
 				E9435D731AA7763B000C67DD /* Main.storyboard */,
 				E933AE411AA74AB60033BFF2 /* Images.xcassets */,
@@ -244,6 +247,7 @@
 				E94DAA0D1AA89D8F00123CED /* cartViewCell.swift in Sources */,
 				E9435D761AA778EB000C67DD /* ViewCartController.swift in Sources */,
 				E933AE3D1AA74AB60033BFF2 /* ViewListController.swift in Sources */,
+				E93898F51AAA5037008DA9EB /* protocols.swift in Sources */,
 				E933AE3B1AA74AB60033BFF2 /* AppDelegate.swift in Sources */,
 				E933AE631AA74CAE0033BFF2 /* taskViewCell.swift in Sources */,
 			);
